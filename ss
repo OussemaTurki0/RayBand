@@ -1,7 +1,5 @@
-📜 Widget: "How to Play"
-1️⃣ Title & Short Intro
-
 "Blackjack – Choufli Hall Edition"
+
 Win 3 games against the dealer before you lose!
 Goal: Get as close to 21 as possible, without going over.
 
