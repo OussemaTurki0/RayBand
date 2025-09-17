@@ -1,8 +1,0 @@
-heart_rate,oxygen,temp,age,sex,condition
-72,98,36.6,25,M,healthy
-90,95,37.8,40,F,fever
-110,89,38.9,65,M,severe_fever
-85,91,36.8,30,F,mild_hypoxia
-100,87,39.0,70,F,severe_hypoxia
-65,99,36.5,22,M,healthy
-95,90,38.5,55,M,fever
