@@ -28,11 +28,33 @@
       "package": "xyz.create.CreateExpoEnvironment"
     },
     "plugins": [
-      ["expo-router", { "sitemap": false }],
-      ["expo-splash-screen", { "image": "./assets/images/splash-icon.png", "imageWidth": 200, "resizeMode": "contain" }],
+      [
+        "expo-router",
+        {
+          "sitemap": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain"
+        }
+      ],
       "expo-audio",
-      ["expo-build-properties", { "ios": { "useFrameworks": "static" } }],
-      "expo-video"
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      "expo-video",
+      "expo-font",
+      "expo-secure-store",
+      "expo-web-browser"
     ],
     "web": {
       "bundler": "metro",
@@ -42,7 +64,9 @@
       "typedRoutes": true
     },
     "extra": {
-      "router": { "origin": false }
+      "router": {
+        "origin": false
+      }
     },
     "runtimeVersion": "1.0.0"
   }

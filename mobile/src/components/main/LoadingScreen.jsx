@@ -1,4 +1,3 @@
-// components/LoadingScreen.tsx
 import React, { useEffect, useState, useRef } from "react";
 import { SafeAreaView, View, Text, Animated, Easing, StatusBar, StyleSheet, Image } from "react-native";
 import Svg, { Polyline, Defs, LinearGradient, Stop, Rect } from "react-native-svg";

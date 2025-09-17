@@ -58,7 +58,7 @@ export default function BraceletHolderPage({ userInfo, medicalInfo, emergencyCon
     <ScrollView
       style={{
         flex: 1,
-        paddingTop: Platform.OS === "ios" ? 50 : 20, // safe area for iPhone
+        paddingTop: Platform.OS === "ios" ? 50 : 20, 
         paddingHorizontal: 20,
       }}
     >
@@ -160,7 +160,7 @@ export default function BraceletHolderPage({ userInfo, medicalInfo, emergencyCon
                   value={String(localUser[field] || "")}
                   keyboardType={["age", "height", "weight"].includes(field) ? "numeric" : "default"}
                   onChangeText={(val) => handleInputChange(field, val)}
-                  multiline={field === "homeLocation"} // wrap long addresses
+                  multiline={field === "homeLocation"} 
                 />
               )
             ) : (

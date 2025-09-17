@@ -5,13 +5,6 @@ import { create } from 'zustand';
 import { Modal, View } from 'react-native';
 import { useAuthModal, useAuthStore, authKey } from './store';
 
-
-/**
- * This hook provides authentication functionality.
- * It may be easier to use the `useAuthModal` or `useRequireAuth` hooks
- * instead as those will also handle showing authentication to the user
- * directly.
- */
 export const useAuth = () => {
   const { isReady, auth, setAuth } = useAuthStore();
   const { isOpen, close, open } = useAuthModal();
@@ -51,9 +44,6 @@ export const useAuth = () => {
   };
 };
 
-/**
- * This hook will automatically open the authentication modal if the user is not authenticated.
- */
 export const useRequireAuth = (options) => {
   const { isAuthenticated, isReady } = useAuth();
   const { open } = useAuthModal();

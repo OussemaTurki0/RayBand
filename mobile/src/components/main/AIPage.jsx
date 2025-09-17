@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#f7f7f7cc",
-    position: "relative", // ensures matrix fills the whole screen
+    position: "relative", // ensures matrix fills the full screen
   },
   matrixText: {
     position: "absolute",

@@ -14,7 +14,6 @@ import {
 } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
 
-// Enable LayoutAnimation on Android
 if (Platform.OS === "android" && UIManager.setLayoutAnimationEnabledExperimental) {
   UIManager.setLayoutAnimationEnabledExperimental(true);
 }
@@ -119,7 +118,7 @@ export default function ProfilePage() {
       {renderItem("feedback", "comments", "Send feedback or suggestions")}
       {renderItem("rate", "star", "Rate the app")}
 
-      {/* Advanced / Developer Options */}
+      {/* test */}
       <Text style={styles.sectionTitle}>Advanced / Developer Options</Text>
       {renderItem("beta", "bezier-curve", "Join beta program")}
       {renderItem("experimental", "flask", "Enable experimental features")}

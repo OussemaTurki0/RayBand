@@ -54,7 +54,6 @@ const SHARED_ALIASES = {
 fs.mkdirSync(VIRTUAL_ROOT_UNRESOLVED, { recursive: true });
 config.watchFolders = [...config.watchFolders, VIRTUAL_ROOT, VIRTUAL_ROOT_UNRESOLVED];
 
-// Add web-specific alias configuration through resolveRequest
 config.resolver.resolveRequest = (context, moduleName, platform) => {
   try {
     if (
@@ -115,7 +114,6 @@ config.reporter = {
   },
 };
 
-// ✅ Add SVG transformer here
 config.transformer = {
   ...config.transformer,
   babelTransformerPath: require.resolve("react-native-svg-transformer"),

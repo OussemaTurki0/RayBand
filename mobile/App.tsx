@@ -17,7 +17,6 @@ const GlobalErrorReporter = () => {
       if (typeof event.preventDefault === 'function') event.preventDefault();
       console.error(event.error);
     };
-    // unhandled promises happen all the time, so we just log them
     const unhandledRejectionHandler = (event: PromiseRejectionEvent) => {
       if (typeof event.preventDefault === 'function') event.preventDefault();
       console.error('Unhandled promise rejection:', event.reason);
@@ -66,8 +65,6 @@ const useHandshakeParent = () => {
       }
     };
     window.addEventListener('message', handleMessage);
-    // Immediately respond to the parent window with a healthy response in
-    // case we missed the healthcheck message
     window.parent.postMessage(healthyResponse, '*');
     return () => {
       window.removeEventListener('message', handleMessage);

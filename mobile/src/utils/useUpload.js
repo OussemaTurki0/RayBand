@@ -21,7 +21,6 @@ function useUpload() {
             body: formData,
           });
         } else {
-          // Fallback to presigned Uploadcare upload
           const presignRes = await fetch("/_create/api/upload/presign/", {
             method: "POST",
           });

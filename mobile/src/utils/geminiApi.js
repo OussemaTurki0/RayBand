@@ -1,5 +1,3 @@
-// src/utils/geminiApi.js
-
 const GEMINI_API_KEY = "AIzaSyBmR7-QEXWccq_EKDnq41KE17kRFX7_2co";
 const GEMINI_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
@@ -21,8 +19,6 @@ export async function askGemini(userMessage) {
     });
 
     const data = await response.json();
-
-    // Parse reply
     const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text || "No reply";
     return reply;
   } catch (err) {

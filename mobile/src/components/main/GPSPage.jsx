@@ -14,7 +14,7 @@ import * as Linking from "expo-linking";
 export default function GPSPage({ pairedDevices }) {
   const screenWidth = Dimensions.get("window").width;
   const [currentLocation, setCurrentLocation] = useState(null);
-  const [MapViewModule, setMapViewModule] = useState(null); // dynamically import MapView
+  const [MapViewModule, setMapViewModule] = useState(null); 
   const blinkAnim = useRef(new Animated.Value(0)).current;
 
   // Blinking animation only for mobile
@@ -33,8 +33,8 @@ export default function GPSPage({ pairedDevices }) {
   useEffect(() => {
     if (Platform.OS !== "web") {
       setCurrentLocation({
-        lat: 36.879533,
-        lng: 10.185951,
+        lat: 36.831732,
+        lng: 10.232902,
         accuracy: 5,
         timestamp: new Date().toLocaleTimeString(),
       });
@@ -44,8 +44,8 @@ export default function GPSPage({ pairedDevices }) {
   }, []);
 
   const displayLocation = currentLocation || {
-    lat: 36.879533,
-    lng: 10.185951,
+    lat: 36.831732,
+    lng: 10.232902,
     accuracy: 10,
     timestamp: new Date().toLocaleTimeString(),
   };

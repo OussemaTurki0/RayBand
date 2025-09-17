@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { FontAwesome5 } from "@expo/vector-icons"; // ✅ Font Awesome 5
+import { FontAwesome5 } from "@expo/vector-icons"; // Font Awesome 5
 
 export default function BottomNav({ activePage, setActivePage }) {
   const navItems = [

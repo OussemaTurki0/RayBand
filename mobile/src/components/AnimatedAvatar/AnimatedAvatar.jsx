@@ -1,4 +1,5 @@
-// src/components/AnimatedAvatar/AnimatedAvatar.jsx
+    // This file is for test animated Avatar But it didnt work
+
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { CustomEase, CustomWiggle } from "gsap/all";
@@ -117,8 +118,8 @@ export default function AnimatedAvatar() {
           </linearGradient>
         </defs>
 
-        {/* Paste all your SVG body elements here (paths, g, etc.) */}
-        {/* Replace class -> className, stroke-linecap -> strokeLinecap, etc. */}
+        {/* test */}
+        {/* more test */}
       </svg>
     </div>
   );

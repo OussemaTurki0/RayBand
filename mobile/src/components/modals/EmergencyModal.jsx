@@ -81,7 +81,7 @@ export default function EmergencyModal({ setShowEmergencyModal, handleSOS }) {
           <TouchableOpacity
             onPress={() => {
               setShowEmergencyModal(false);
-              // Handle emergency action here
+              // Handle emergency action
             }}
             style={{
               flex: 1,

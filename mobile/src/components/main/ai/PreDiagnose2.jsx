@@ -1,6 +1,4 @@
-// PreDiagnose2.jsx
 export const computeDerivedFeatures = (data) => {
-  // Clamp Heart Rate to realistic range
   const HR = Math.min(Math.max(data.Heart_Rate, 40), 180);
   const Derived_HRV = 60 / HR;
   const Derived_Pulse_Pressure = data.Systolic_Blood_Pressure - data.Diastolic_Blood_Pressure;

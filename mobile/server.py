@@ -5,14 +5,14 @@ from pydantic import BaseModel
 from typing import List, Union
 import tensorflow as tf
 
-# ----- Load your Keras model -----
+# Load model
 MODEL_PATH = "src/components/main/ai/my_vitals_model.h5"
 model = tf.keras.models.load_model(MODEL_PATH)
 
 app = FastAPI(title="AI Risk Predictor")
 
-# CORS configuration for mobile and web
-origins = ["*"]  # Allow all origins for testing
+#configuration for mobile and web
+origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
