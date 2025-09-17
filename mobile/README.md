@@ -36,9 +36,9 @@ RayBand Mobile is a **cross-platform React Native/Expo application** designed fo
 
 ## Installation
 
-1. Clone the repository:
-
 ```bash
+Clone the repository:
+
 git clone https://github.com/yourusername/RayBand.git
 cd RayBand/mobile
 
