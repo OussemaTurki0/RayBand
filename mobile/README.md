@@ -1,3 +1,7 @@
+# Author
+
+Oussema Turki - oussematurki0@gmail.com
+
 # RayBand Mobile App
 
 RayBand Mobile is a **cross-platform React Native/Expo application** designed for real-time health monitoring via a connected wearable device. The app displays heart rate, oxygen level, temperature, and other vital data, and provides AI-powered diagnostics, alerts, and user-friendly visualizations.
@@ -7,7 +11,7 @@ RayBand Mobile is a **cross-platform React Native/Expo application** designed fo
 ## Features
 
 - **Real-Time Health Monitoring**: Display live heart rate (BPM), oxygen saturation, temperature, and more from a connected ESP32 wearable.
-- **AI Diagnostics**: Analyze health data with an AI Model system that provides risk assessment, possible conditions, and doctor recommendations.
+- **AI Diagnostics**: Analyze health data with an AI model system that provides risk assessment, possible conditions, and doctor recommendations.
 - **Weekly Analytics**: Visualize weekly trends for heart rate, oxygen level, and temperature using charts.
 - **User Profiles**: Edit and manage wearer information including medical history, allergies, and health tips.
 - **Location-Based Features**: Track GPS coordinates and find nearby healthcare providers.
@@ -30,7 +34,6 @@ RayBand Mobile is a **cross-platform React Native/Expo application** designed fo
 
 ---
 
-
 ## Installation
 
 1. Clone the repository:
@@ -39,22 +42,25 @@ RayBand Mobile is a **cross-platform React Native/Expo application** designed fo
 git clone https://github.com/yourusername/RayBand.git
 cd RayBand/mobile
 
-2. Install dependencies:
+
+Install dependencies:
 
 npm install
 
-3. Start the Expo development server:
+
+Start the backend server (for AI computations):
 
 uvicorn server:app --reload --host 0.0.0.0 --port 8000
-
-or 
-
+# or
 python -m uvicorn server:app --reload --host 0.0.0.0 --port 8000
 
-also run this to allaw ios integration via windows 
+
+Start the Expo frontend:
 
 npx expo start --tunnel
 
-Author:
 
-Oussema Turki
+The --tunnel option allows iOS devices to connect when running on Windows.
+
+
+---
