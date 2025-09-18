@@ -37,8 +37,6 @@ class PatientVitals(BaseModel):
     Derived_BMI: float
     Derived_MAP: float
 
-def map_risk(prob: float) -> int:
-    return 1 if prob >= 0.5 else 0
 
 @app.post("/predict")
 async def predict(vitals: Union[PatientVitals, List[PatientVitals]]):
